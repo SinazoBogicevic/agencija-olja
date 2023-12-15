@@ -1,16 +1,17 @@
 import React from "react"
 import Image, { StaticImageData } from "next/image"
-import accounting from "../accounting.png"
+import vector from "../vector.png"
+import expand from "../expand.png"
 import styles from '../page.module.css'
 
 export default function Navbar() {
     return (
+
     <nav className={styles.navigation}>
       <div className={styles.navigationIcon}>
-        <Image src={accounting} alt={""} width={60} height={60}/>
+        <Image src={vector} alt={""} />
       <p>Finanxe</p>
       </div>
-      
         <ul className={styles.navigationBar}>
           <li>
             <a href="">Home</a>
@@ -22,9 +23,18 @@ export default function Navbar() {
             <a href="">Contact Us</a>
           </li>
           <li>
-            <a href="">Language</a>
+            <a href="">Language <Image src={expand} alt={""} width={10}/></a>
+            <ul className={styles.language}>
+              <li>
+                <a href="">English 🇬🇧</a>
+              </li>
+              <li>
+                <a href="">Serbian</a>
+              </li>
+            </ul>
           </li>
         </ul>
     </nav>
+
     )
 }
