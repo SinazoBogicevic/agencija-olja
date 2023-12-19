@@ -36,3 +36,31 @@ export const services =  [
 
 },
   ]
+
+
+export const questions =  [
+  {
+      title: 'What are the Commonly Posted Materials?',
+      body: 'Vestibulum ligula sapien, cursus sed consectetur nec, tincidunt ac metus. Vivamus accumsan diam eget ultricies auctor.',
+  },
+  {
+      title: 'Does the above price include product photo service?',
+      body: 'lorem ipsum lorem ipsum lorem ipsum',
+  },
+  {
+      title: 'What is the payment system?',
+      body: 'lorem ipsum lorem ipsum lorem ipsum',
+  },
+  {
+      title: 'How does smArt Work For Your Business?',
+      body: 'lorem ipsum lorem ipsum lorem ipsum',
+  },
+  {
+      title: 'What Services does smArt Offer?',
+       body: 'lorem ipsum lorem ipsum lorem ipsum',
+  },
+  {
+      title: 'What is the time frame?',
+       body: 'lorem ipsum lorem ipsum lorem ipsum',
+  },
+    ]

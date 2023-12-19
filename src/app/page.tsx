@@ -1,12 +1,14 @@
 
 import styles from './page.module.css'
 import Card from './components/card'
-import { services } from './statics'
+import { questions, services } from './statics'
 import Section from './components/section'
 import Navbar from './components/navbar'
 import { Hero } from './components/hero'
 import Footer from './components/footer'
 import Contact from './components/contact'
+import Faq from './components/faq'
+import Faqs from './components/faqs'
 
 export default function Home() {
 
@@ -24,6 +26,15 @@ export default function Home() {
           services.map(({title, body, icon}) => <Card key={title} title={title} body={body} icon={icon} />)
         }
       </Section>
+      <Faqs 
+      title={<span>Frequently Asked  <span className={styles.darkBlueTitle}>Questions</span></span>} 
+      subtitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra arcu at mi maximus, id placerat turpis fringilla. Vivamus fringilla sem scelerisque auctor interdum. '}
+      style={styles.cards}
+       >
+        {
+          questions.map(({title, body}) => <Faq key={title} title={title} body={body} />)
+        }
+      </Faqs>
       <Contact />
       <Footer />
     </main>
