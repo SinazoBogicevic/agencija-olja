@@ -187,7 +187,8 @@ padding: 16px;
   color: red;
   transform: scale(0.8);
 }
-*/ .heroText button:hover {
+
+.heroText button:hover {
   background-color: #3c6bff;
 }
 
