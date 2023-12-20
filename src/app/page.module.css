@@ -91,7 +91,10 @@ text-align: left; */
   color: darkblue;
   transform: scale(1.5);
 }
-
+.navigationBar li:hover {
+  color: darkblue;
+  transform: scale(1.1);
+}
 .navigationIcon {
   display: flex;
   flex-direction: row;
@@ -168,19 +171,23 @@ padding: 16px;
   width: 100%;
   position: absolute;
   z-index: 5;
-  display: none;
 }
 
-/* .navigationBar li:hover ul.language {
+.language:hover {
+  transform: none;
+  color: darkblue;
+}
+
+/* .navigationBar li:hover ul.language{
   display: block;
   transform: scale(0.8);
 } */
 
-/* .navigationBar li:hover ul.language:hover {
+.navigationBar li:hover ul.language:hover {
   color: red;
-} */
-
-.heroText button:hover {
+  transform: scale(0.8);
+}
+*/ .heroText button:hover {
   background-color: #3c6bff;
 }
 
@@ -333,4 +340,42 @@ padding: 16px;
   border-width: 0px;
   border-radius: 32px;
   padding: 16px 0px;
+}
+.questionsHeader {
+  width: 915px;
+  height: 162px;
+  top: 160px;
+  left: 262px;
+  gap: 24px;
+  text-align: center;
+}
+
+.cardQuestion {
+  display: flex;
+  flex-direction: column;
+  width: 602px;
+  top: 402px;
+  left: 98px;
+  padding: 40px 32px 40px 32px;
+  border-radius: 16px;
+  gap: 16px;
+  box-shadow: 35px 15px 45px 0px rgba(0, 0, 0, 0.09);
+}
+
+.sectionFaqsCards {
+  width: 1440px;
+  height: 1112px;
+}
+
+.topFaqsHedder {
+  display: flex;
+  flex-direction: column;
+  padding: 120px;
+  width: 729px;
+  gap: 24px;
+  justify-content: center;
+}
+
+.h3image {
+  justify-content: space-between;
 }
