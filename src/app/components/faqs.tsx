@@ -1,28 +1,35 @@
-import styles from '../page.module.css'
-import { HTMLAttributes, ReactNode } from "react"
+"use client";
+import styles from "../page.module.css";
+import { HTMLAttributes, ReactNode, use, useState } from "react";
+import Section from "./section";
+import { questions } from "../statics";
+import Faq from "./faq";
 
-export type faqProps = {
-    title: ReactNode,
-    subtitle: string,
-    children: ReactNode,
-    style?:string | undefined
+export function Faqs() {
+
+    const [openFaq, setOpenFaq] = useState(false);
+    const [selected, setSelected] = useState(0);
+
+  return (
+    <Section
+        title={
+          <span>
+            Our landscaping work and{" "}
+            <span className={styles.darkBlueTitle}>services</span>
+          </span>
+        }
+        subtitle={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis."
+        }
+        style={styles.cards}
+      >
+        {questions.map(({ id, title, body }) => 
+          <Faq key={id} title={title} body={body} isOpen={selected === id ? openFaq : false} onClick={() => {
+            setSelected(id)
+            setOpenFaq((curr)=>!curr)}} />
+        )}
+      </Section>
+  );
 }
 
-export function Faqs({title,subtitle,children, style}:faqProps) {
-    return (
-        <div className={styles.sectionFaqsCards}>
-            
-            <div className={styles.topFaqsHedder}>
-                <h2 className={styles.headings}>{title}</h2>
-                <p>{subtitle}</p>
-            </div>
-            
-            <div className={style}>
-            {children}
-            </div>
-
-        </div>
-    )
-}
-
-export default Faqs
+export default Faqs;

@@ -30,22 +30,7 @@ export default function Home() {
           <Card key={title} title={title} body={body} icon={icon} />
         ))}
       </Section>
-      <Faqs
-        title={
-          <span>
-            Frequently Asked{" "}
-            <span className={styles.darkBlueTitle}>Questions</span>
-          </span>
-        }
-        subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra arcu at mi maximus, id placerat turpis fringilla. Vivamus fringilla sem scelerisque auctor interdum. "
-        }
-        style={styles.cards}
-      >
-        {questions.map(({ title, body }) => (
-          <Faq key={title} title={title} body={body} />
-        ))}
-      </Faqs>
+      <Faqs />
       <Contact />
       <Footer />
     </main>

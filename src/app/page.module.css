@@ -74,7 +74,96 @@ text-align: left; */
   color: blue;
   width: 100%;
   height: 80px;
-  padding: 24px 98px 24px 98px;
+  padding: 24px 80px 24px 80px;
+}
+
+.navigationAll {
+  width: 100%;
+  /* height: 100vh; */
+  z-index: 100;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+  color: blue;
+  width: 100%;
+}
+
+.list li {
+  padding: 16px;
+}
+
+.list li:hover {
+  color: darkblue;
+  transform: scale(1.1);
+}
+
+@media screen and (min-width: 801px) {
+  .burger {
+    display: none;
+  }
+  .list {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    display: block;
+  }
+  .list {
+    display: none;
+  }
+  .navigation {
+    padding: 24px 32px 24px 32px;
+  }
+  .language {
+    color: red;
+  }
+}
+
+.burgerMenu {
+  width: 100%;
+  height: 0vh;
+  z-index: 100;
+  transition: height 0.1s ease-out;
+}
+
+.hasMaxHeightBurger {
+  height: 100vh;
+}
+
+.noMaxHeightBurger {
+  height: 0px;
+}
+
+.navigationUl {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navigationUl li {
+  text-decoration: none;
+  width: 100%;
+  margin: 1px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 42px;
+}
+
+.navigationUl li:hover {
+  background-color: #a5b7f4;
+  color: white;
 }
 
 .navigationBar {
@@ -89,16 +178,16 @@ text-align: left; */
 
 .navigationBar li:hover {
   color: darkblue;
-  transform: scale(1.5);
-}
-.navigationBar li:hover {
-  color: darkblue;
   transform: scale(1.1);
 }
 .navigationIcon {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.chevronDown {
+  font-size: small;
 }
 
 /* .sectionBig {
@@ -120,9 +209,10 @@ padding: 16px;
     #3c6bff -8.05%,
     rgba(0, 182, 255, 0.933333) 112.4%
   );
+  /* clip-path: url(); */
   color: white;
   width: 100%;
-  padding: 80px;
+  padding: 80px 80px 0px 80px;
   height: 100vh;
 }
 
@@ -151,7 +241,7 @@ padding: 16px;
 
 .heroText button {
   font-size: 16px;
-  width: 160px;
+  width: 320px;
   height: 64px;
   padding: 16px 40px 16px 40px;
   border-radius: 16px;
@@ -167,15 +257,35 @@ padding: 16px;
 }
 
 .language {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #3c6bff;
   list-style-type: none;
   width: 100%;
-  position: absolute;
   z-index: 5;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.2s ease-out;
 }
 
-.language:hover {
-  transform: none;
-  color: darkblue;
+.hasMaxHeight {
+  height: 120px;
+}
+
+.noMaxHeight {
+  height: 0px;
+}
+
+.language li:hover {
+  /* transform: none;
+  background-color: #8ea4ee;
+  color: white;
+  transition: 0.8s; */
+  transform: scale(1.1);
+  background-color: white;
+  color: purple;
 }
 
 /* .navigationBar li:hover ul.language{
@@ -183,10 +293,10 @@ padding: 16px;
   transform: scale(0.8);
 } */
 
-.navigationBar li:hover ul.language:hover {
+/* .navigationBar li:hover ul.language:hover {
   color: red;
   transform: scale(0.8);
-}
+} */
 
 .heroText button:hover {
   background-color: #3c6bff;
@@ -197,9 +307,9 @@ padding: 16px;
   padding: 72px 80px;
 }
 
-/* .hero {
-  clip-path: circle(800px at 600px 400px);
-} */
+.hero {
+  clip-path: polygon(100% 0%, 0% 0%, 0% 100%, 50% 90%, 100% 100%);
+}
 
 .footer {
   display: flex;
@@ -316,6 +426,7 @@ padding: 16px;
   display: flex;
   width: 100%;
   justify-content: space-between;
+  column-gap: 100px;
 }
 
 .input {
@@ -355,6 +466,8 @@ padding: 16px;
   display: flex;
   flex-direction: column;
   width: 602px;
+  /* max-height: 174px;
+  min-height: 174px; */
   top: 402px;
   left: 98px;
   padding: 40px 32px 40px 32px;
@@ -363,18 +476,39 @@ padding: 16px;
   box-shadow: 35px 15px 45px 0px rgba(0, 0, 0, 0.09);
 }
 
+.success {
+  height: 220px;
+}
+
+.error {
+  height: 120px;
+}
+
 .sectionFaqsCards {
   width: 1440px;
-  height: 1112px;
+  /* height: 1112px; */
+  padding: 80px;
 }
 
 .topFaqsHedder {
   display: flex;
   flex-direction: column;
-  padding: 120px;
-  width: 729px;
+  /* padding: 120px; */
+  /* width: 729px; */
   gap: 24px;
   justify-content: center;
+}
+
+.topFaqsHedder h2 {
+  font-family: Asap;
+  font-size: 62px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.topFaqsHedder p {
+  width: 740px;
 }
 
 .h3image {
