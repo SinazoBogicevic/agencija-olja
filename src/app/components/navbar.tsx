@@ -33,7 +33,7 @@ export default function Navbar() {
             />
           )}
         </div>
-        {/* {!burgerOpen && <ul className={styles.list}>
+        {!burgerOpen && <ul className={styles.list}>
         <li>
           <a href="">Home</a>
         </li>
@@ -43,7 +43,6 @@ export default function Navbar() {
         <li>
           <a href="">Contact Us</a>
         </li>
-        
         <li>
         <p onClick={() => setShowLanguages((curr) => !curr)}>
             Language <FaChevronDown className={styles.chevronDown}/>
@@ -52,7 +51,7 @@ export default function Navbar() {
       </ul>}
       <div>
       {showLanguages && (
-            <ul className={styles.language}>
+            <ul className={styles.languageNav}>
               <li>
                 <a href="">English 🇬🇧</a>
               </li>
@@ -61,13 +60,12 @@ export default function Navbar() {
               </li>
             </ul>
           )}
-      </div> */}
+      </div>
       </nav>
-      
         <div className={clsx(styles.burgerMenu, {
           [styles.hasMaxHeightBurger]: burgerOpen,
           [styles.noMaxHeightBurger]: !burgerOpen,
-        })}>
+         })}>
          {burgerOpen && <><ul className={styles.navigationUl}>
             <li>Home</li>
             <li>About Us</li>
@@ -92,7 +90,6 @@ export default function Navbar() {
             </li>
           </ul></>}
         </div>
-      
     </div>
   );
 }

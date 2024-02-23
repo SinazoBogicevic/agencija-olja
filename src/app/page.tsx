@@ -8,6 +8,9 @@ import Navbar from "./components/navbar";
 import Section from "./components/section";
 import styles from "./page.module.css";
 import { questions, services } from "./statics";
+import Companies from "./components/companies";
+import Testimonials from "./components/testimonials";
+import Packages from "./components/packages";
 
 export default function Home() {
   return (
@@ -30,7 +33,10 @@ export default function Home() {
           <Card key={title} title={title} body={body} icon={icon} />
         ))}
       </Section>
+      <Packages />
+      <Companies />
       <Faqs />
+      <Testimonials />
       <Contact />
       <Footer />
     </main>

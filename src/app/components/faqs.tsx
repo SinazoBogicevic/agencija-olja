@@ -14,8 +14,8 @@ export function Faqs() {
     <Section
         title={
           <span>
-            Our landscaping work and{" "}
-            <span className={styles.darkBlueTitle}>services</span>
+            Frequently Asked {" "}
+            <span className={styles.darkBlueTitle}>Questions</span>
           </span>
         }
         subtitle={
