@@ -10,7 +10,7 @@ export type SectionProps = {
 
 export function Section({ title, subtitle, children, style }: SectionProps) {
   return (
-    <div className={styles.sectionWrapper}>
+    <div className={styles.sectionWrapper} id="Services">
       <div className={styles.textContainer}>
         <h2 className={styles.sectionTitle}>{title}</h2>
         <p>{subtitle}</p>

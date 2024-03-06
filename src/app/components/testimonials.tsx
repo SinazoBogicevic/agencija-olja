@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Testimonials() {
   return (
-    <div className={styles.happyClients}>
+    <div className={styles.happyClients} id="Clients">
       <div className={styles.happyClientsTitle}>
         <h1>
           What clients <span className={styles.darkBlueTitle}>are saying</span>
@@ -41,7 +41,7 @@ export default function Testimonials() {
         <div className={styles.client2}>
           <Image
             src={clientPicture1}
-            className={styles.clientPicture1}
+            className={styles.clientPicture2}
             alt={""}
           />
           <div className={styles.containerClient1}>

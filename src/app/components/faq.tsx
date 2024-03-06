@@ -14,12 +14,12 @@ export type FaqProps = {
 
 export function Faq({ title, body, isOpen, onClick }: FaqProps) {
   return (
-    <div className={clsx(styles.cardQuestion, {
+    <div id="FAQs" onClick={onClick} className={clsx(styles.cardQuestion, {
       [styles.success]: isOpen,
       [styles.error]: !isOpen,
     })}>
-      <span>
-      <p onClick={onClick}>
+      <span className={styles.cardTitle}>
+      <p>
         {title} 
       </p>
       <Image src={expand} alt={""} width={16} />

@@ -5,7 +5,7 @@ import styles from "../page.module.css";
 export function Hero() {
   return (
     
-      <div className={styles.hero}>
+      <div className={styles.hero} id="Home">
         <div className={styles.heroText}>
           <h1>Preserving Your Finances For a Better Future</h1>
           <p>
@@ -16,13 +16,14 @@ export function Hero() {
           </p>
           <button type="submit">Get Started</button>
         </div>
+        <div>
         <Image
           src={hero}
           width={340}
           height={472}
           className={styles.heroImage}
           alt="view of skyscrapers from the bottom-up"
-        />
+        /></div>
       </div>
     
   );

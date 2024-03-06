@@ -33,25 +33,74 @@ export default function Navbar() {
             />
           )}
         </div>
-        {!burgerOpen && <ul className={styles.list}>
-        <li>
-          <a href="">Home</a>
-        </li>
-        <li>
-          <a href="">About Us</a>
-        </li>
-        <li>
-          <a href="">Contact Us</a>
-        </li>
-        <li>
-        <p onClick={() => setShowLanguages((curr) => !curr)}>
-            Language <FaChevronDown className={styles.chevronDown}/>
-          </p>
-        </li>
-      </ul>}
-      <div>
-      {showLanguages && (
-            <ul className={styles.languageNav}>
+        {!burgerOpen && (
+          <ul className={styles.list}>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Packages">Packages</a></li>
+              <li><a href="#Companies">Companies</a></li>
+              <li><a href="#FAQs">FAQs</a></li>
+              <li><a href="#Clients">Clients</a></li>
+              <li><a href="#Contact">Contact Us</a></li>
+            <li className={styles.dropdown}>
+              {/* <p onClick={() => setShowLanguages((curr) => !curr)}>
+                Language <FaChevronDown className={styles.chevronDown} />
+              </p> */}
+              <p>
+                Language <FaChevronDown className={styles.chevronDown} />
+              </p>
+              <ul className={styles.languageNav}>
+                <li>
+                  <a href="">English 🇬🇧</a>
+                </li>
+                <li>
+                  <a href="">Serbian 🇷🇸</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        )}
+        {
+          // showLanguages && (
+          //   <ul className={styles.languageNav}>
+          //     <li>
+          //       <a href="">English 🇬🇧</a>
+          //     </li>
+          //     <li>
+          //       <a href="">Serbian 🇷🇸</a>
+          //     </li>
+          //   </ul>
+          // )
+        }
+      </nav>
+      <div
+        className={clsx(styles.burgerMenu, {
+          [styles.hasMaxHeightBurger]: burgerOpen,
+          [styles.noMaxHeightBurger]: !burgerOpen,
+        })}
+      >
+        {burgerOpen && (
+          <>
+            <ul className={styles.navigationUl}>
+              <li><a href="#Home">Home</a></li>
+              <li><a href="#Services">Services</a></li>
+              <li><a href="#Packages">Packages</a></li>
+              <li><a href="#Companies">Companies</a></li>
+              <li><a href="#FAQs">FAQs</a></li>
+              <li><a href="#Clients">Clients</a></li>
+              <li><a href="#Contact">Contact Us</a></li>
+              <li>
+                <p onClick={() => setShowLanguages((curr) => !curr)}>
+                  Language <FaChevronDown className={styles.chevronDown} />
+                </p>
+              </li>
+            </ul>
+            <ul
+              className={clsx(styles.language, {
+                [styles.hasMaxHeight]: showLanguages,
+                [styles.noMaxHeight]: !showLanguages,
+              })}
+            >
               <li>
                 <a href="">English 🇬🇧</a>
               </li>
@@ -59,37 +108,9 @@ export default function Navbar() {
                 <a href="">Serbian 🇷🇸</a>
               </li>
             </ul>
-          )}
+          </>
+        )}
       </div>
-      </nav>
-        <div className={clsx(styles.burgerMenu, {
-          [styles.hasMaxHeightBurger]: burgerOpen,
-          [styles.noMaxHeightBurger]: !burgerOpen,
-         })}>
-         {burgerOpen && <><ul className={styles.navigationUl}>
-            <li>Home</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-            <li>
-              <p onClick={() => setShowLanguages((curr) => !curr)}>
-                Language <FaChevronDown className={styles.chevronDown} />
-              </p>
-            </li>
-          </ul>
-          <ul
-            className={clsx(styles.language, {
-              [styles.hasMaxHeight]: showLanguages,
-              [styles.noMaxHeight]: !showLanguages,
-            })}
-          >
-            <li>
-              <a href="">English 🇬🇧</a>
-            </li>
-            <li>
-              <a href="">Serbian 🇷🇸</a>
-            </li>
-          </ul></>}
-        </div>
     </div>
   );
 }
