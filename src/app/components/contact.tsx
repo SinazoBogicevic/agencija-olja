@@ -8,11 +8,13 @@ export default function Contact() {
   const { register, handleSubmit } = useForm();
   const onSubmit = (data) => console.log(data);
   return (
-    <div className={styles.contactWrapper}>
-      <Image src={contactUs} alt="" width={450} height={550} />
+    <div className={styles.contactWrapper} id="Contact">
+      <Image src={contactUs} className={styles.contactImage} alt="" />
       <div className={styles.contactContent}>
-        <div>
-          <h1>CONTACT US</h1>
+        <div className={styles.contectTitle}>
+          <h1>
+            <span className={styles.darkBlueTitle}>CONTACT</span> US
+          </h1>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
             facilisis eleifend quam, non efficitur nisi mattis quis.{" "}
@@ -47,10 +49,11 @@ export default function Contact() {
                 className={styles.input}
               />
             </div>
-            <div>
+            <div className={styles.inputMassage}>
+              <p>Messages</p>
               <input
                 type="text"
-                placeholder="Messages"
+                placeholder=""
                 {...register("Message", { required: true })}
                 className={styles.input}
               />
