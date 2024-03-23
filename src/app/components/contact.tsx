@@ -13,11 +13,11 @@ export default function Contact() {
       <div className={styles.contactContent}>
         <div className={styles.contectTitle}>
           <h1>
-            <span className={styles.darkBlueTitle}>CONTACT</span> US
+            <span className={styles.darkBlueTitle}>KONTAKTIRAJTE</span> NAS
           </h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            facilisis eleifend quam, non efficitur nisi mattis quis.{" "}
+          Za sva dodatna pitanja i stručnu podršku, molimo vas da popunite kontakt formu 
+          u nastavku. Naše kolege će vas kontaktirati u najkraćem roku.{" "}
           </p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>

@@ -7,12 +7,9 @@ export function Hero() {
     
       <div className={styles.hero} id="Home">
         <div className={styles.heroText}>
-          <h1>Preserving Your Finances For a Better Future</h1>
+          <h1>Sačuvajte svoje finansije za bolju budućnost</h1>
           <p>
-            Li Europan lingues es membres del sam familie. Lor separat
-            existentie es un myth. Por scientie, musica, sport etc, litot Europa
-            usa li sam vocabular. Li lingues differe solmen in li grammatica, li
-            pronunciation e li plu commun vocabules.
+            Briga o novcu je univerzalna. Mnogi od nas, iz celog sveta i iz svih sfera života, skoro konstantno se suočavamo sa finansijskim stresom i neizvesnošću koje nam nosi budućnost. Šta ljude najviše brine kada je riječ o finansijama i koji su korisni saveti za finansijsku sigurnost saznajte u nastavku.
           </p>
           <button type="submit">Get Started</button>
         </div>

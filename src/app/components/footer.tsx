@@ -6,6 +6,9 @@ import twitter from "../twitter.png";
 import linkedin from "../linkedin.png";
 import smArt from "../smArt.png";
 import styles from "../page.module.css";
+import { TfiEmail } from "react-icons/tfi";
+import { IoLocationSharp } from "react-icons/io5";
+import { PiPhoneDisconnectDuotone } from "react-icons/pi";
 
 export default function Footer() {
   return (
@@ -13,8 +16,7 @@ export default function Footer() {
       <div className={styles.smart}>
         <Image src={smArt} alt="" />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit
-          amet neque tortor.{" "}
+        Takodje nas mozete pronaci i na drustvenim mrezama.{" "}
         </p>
         <div className={styles.socialMedia}>
           <a href="https://www.linkedin.com/">
@@ -52,23 +54,28 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.quickLinks}>
-        <h6>Quick Links</h6>
+        <h6>Brze Veze</h6>
         <ul className={styles.footerBar}>
-        <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Packages">Packages</a></li>
-              <li><a href="#Companies">Companies</a></li>
+        <li><a href="#Home">Pocetna</a></li>
+              <li><a href="#Services">Usluge</a></li>
+              <li><a href="#Packages">Paketi</a></li>
+              <li><a href="#Companies">Kompanije</a></li>
               <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Clients</a></li>
-              <li><a href="#Contact">Contact Us</a></li>
+              <li><a href="#Clients">Klijenti</a></li>
+              <li><a href="#Contact">Kontaktiraj Nas</a></li>
         </ul>
       </div>
       <div className={styles.contact}>
-        <h6>Contact Us</h6>
+        <h6>Kontaktiraj Nas</h6>
         <div className={styles.contactNo}>
-          <p>hello@website.com</p>
-          <p>Riverside Building, County Hall, London SE1 7PB, United Kingdom</p>
-          <p>+02 5421234560</p>
+        <TfiEmail color="lightskyblue"/> 
+          <p>olja.bogicevic65@gmail.com</p>
+          <p>agencijaolja@mts.rs</p>
+        <IoLocationSharp color="green"/>
+          <p>Zore Radulovic 14a, 34000 Kragujevac, Srbija</p>
+        <PiPhoneDisconnectDuotone color="orange"/>
+          <p>+381 66 331 573</p>
+          <p>+381 34 331 573</p>
         </div>
       </div>
     </div>

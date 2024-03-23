@@ -14,12 +14,12 @@ export function Faqs() {
     <Section
         title={
           <span>
-            Frequently Asked {" "}
-            <span className={styles.darkBlueTitle}>Questions</span>
+            Cesto Postavljena {" "}
+            <span className={styles.darkBlueTitle}>Pitanja</span>
           </span>
         }
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis."
+          "Za sva dodatna pitanja i konsultacije, kontaktirajte nas."
         }
         style={styles.cards}
       >

@@ -7,12 +7,10 @@ export default function Companies() {
     <div className={styles.companiesContainer} id="Companies">
       <div>
         <h1>
-          Trusted by Top <span className={styles.darkBlueTitle}>Companies</span>
+        Uz poverenje vrhunskih  <span className={styles.darkBlueTitle}>kompanija</span>
         </h1>
         <p className={styles.textTitle}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          pharetra arcu at mi maximus, id placerat turpis fringilla. Vivamus
-          fringilla sem scelerisque auctor interdum.
+        Dugogodišnji rad, iskustvo i stečeno poverenje kod klijenata i državnih organa uz stalno usavršavanje garancija je kvaliteta naših usluga, koje stalno prilagodjavamo našim klijentima.
         </p>
       </div>
       <Image src={frame} className={styles.companiesLines} alt={""} />

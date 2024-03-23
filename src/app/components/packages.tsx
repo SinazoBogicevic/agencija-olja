@@ -4,12 +4,13 @@ import { FaCheckCircle } from "react-icons/fa";
 export default function Packages() {
     return (
         <div className={styles.packages} id="Packages">
-            <h1>Packages for social media management</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque pharetra arcu at mi maximus, id placerat turpis fringilla. Vivamus fringilla sem scelerisque auctor interdum.</p>
+            <h1>Pregled osnovnih usluga 
+            Osnovni paketi</h1>
+            <p>Za uspešno poslovanje neophodan je dobar knjigovođa, koji će znati kako da evidentira sve poslovne promene koje se dešavaju u Vašem poslovanju, analizira ih i na vreme Vam ukaže na eventualne probleme ukoliko do njih dođe ili Vam da savete kako da unapredite poslovanje.</p>
             <div className={styles.packageChoise}>
                 <div className={styles.package1}>
-                    <h3>Basic Plan</h3>
-                    <div className={styles.mouthlyPayment}><h1>$99</h1><p>/Per month</p></div>
+                    <h3>Plan1</h3>
+                    <div className={styles.mouthlyPayment}><h2>9,999.00din</h2><p>/mesecno</p></div>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> 14 contents in total</p>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Including 12 Feed Designs</p>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Including 2 story designs</p>
@@ -19,8 +20,8 @@ export default function Packages() {
                     <button className={styles.packagesButtons}>Purchase</button>
                 </div>
                 <div className={styles.package2}>
-                    <h3>Basic Plan</h3>
-                    <div className={styles.mouthlyPayment}><h1>$199</h1><p>/Per month</p></div>
+                    <h3>Plan2</h3>
+                    <div className={styles.mouthlyPayment}><h2>19,999.00din</h2><p>/mesecno</p></div>
                     <p><FaCheckCircle /> Get 31 contents in total</p>
                     <p><FaCheckCircle /> Includes 2 Video Reels (NEW)</p>
                     <p><FaCheckCircle /> Includes 24 Feed designs</p>
@@ -31,8 +32,8 @@ export default function Packages() {
                     <button className={styles.packagesButton2}>Purchase</button>
                 </div>
                 <div className={styles.package3}>
-                    <h3>Basic Plan</h3>
-                    <div className={styles.mouthlyPayment}><h1>$399</h1><p>/Per month</p></div>
+                    <h3>Plan3</h3>
+                    <div className={styles.mouthlyPayment}><h2>39,999.00din</h2><p>/mesecno</p></div>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Get 66 contents in total</p>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Includes 4 Video Reels (NEW)</p>
                     <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Includes 48 Feed designs</p>

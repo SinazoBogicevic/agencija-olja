@@ -72,7 +72,7 @@ text-align: left; */
     display: flex;
     flex-direction: column;
   }
-  .languageNav{
+  .languageNav {
     opacity: 0.8;
     border-radius: 16px;
   }
@@ -81,17 +81,26 @@ text-align: left; */
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(
+    /* background: linear-gradient(
       135.27deg,
       #d9faff -8.06%,
       #3c6bff -8.05%,
       rgba(0, 182, 255, 0.933333) 112.4%
-    );
+    ); */
     color: white;
     width: 100%;
     padding: 80px 80px 160px 80px;
     height: 100vh;
   }
+
+  .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://images.pexels.com/photos/1144176/pexels-photo-1144176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+
   .hero::after {
     content: "";
     border-top-left-radius: 50% 100%;
@@ -184,24 +193,31 @@ text-align: left; */
     left: 20px;
     width: 1440px;
     height: 1400px;
-    background-image: url(hero.jpg);
+    /* background-image: url(hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    isolation: isolate;
+    isolation: isolate; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding: 100px;
   }
-  .packages::after {
+  .packages {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  }
+  /* .packages::after {
     content: "";
     position: absolute;
     z-index: -1;
     inset: 0;
     background: rgb(1, 70, 182);
     opacity: 0.5;
-  }
+  } */
   .packages h1,
   .packages p {
     width: 733px;
@@ -315,7 +331,7 @@ text-align: left; */
     height: 100vh;
     color: black;
   }
-  .companiesContainer h1{
+  .companiesContainer h1 {
     font-size: 67px;
   }
   .companiesContainer span {
@@ -344,7 +360,6 @@ text-align: left; */
   }
   .happyClientsTitle {
     width: 528px;
-    height: 332px;
     top: 341px;
     left: 98px;
     gap: 24px;
@@ -356,6 +371,7 @@ text-align: left; */
     line-height: 92px;
     letter-spacing: 0em;
     text-align: left;
+    margin-bottom: 24px;
   }
   .happyClientsTitle p {
     font-family: Asap;
@@ -446,6 +462,7 @@ text-align: left; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
   }
 
   .contactUsHeader {
@@ -510,6 +527,14 @@ text-align: left; */
     object-fit: contain;
   }
 
+  .contectTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+
   .submitButton {
     width: 70%;
     color: white;
@@ -548,6 +573,8 @@ text-align: left; */
     width: 20%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     gap: 32px;
   }
 
@@ -566,11 +593,22 @@ text-align: left; */
     width: 25%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 32px;
   }
 
   .contact h6 {
     font-size: 21px;
+  }
+
+  .contactNo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
   }
 
   .socialMedia {
@@ -931,7 +969,8 @@ text-align: left; */
     justify-content: space-around;
     padding: 32px;
   }
-  .contectTitle h1, .contectTitle p {
+  .contectTitle h1,
+  .contectTitle p {
     padding: 32px;
     justify-content: space-between;
   }
@@ -1055,6 +1094,8 @@ text-align: left; */
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
     gap: 8px;
   }
 
@@ -1142,6 +1183,7 @@ text-align: left; */
   color: darkblue;
   transform: scale(1.1);
 }
+
 .navigationIcon {
   display: flex;
   flex-direction: row;
@@ -1255,7 +1297,9 @@ padding: 16px;
   /* max-height: 174px;
   min-height: 174px; */
   top: 402px;
-  left: 98px;justify-content: center;align-items: center;
+  left: 98px;
+  justify-content: center;
+  align-items: center;
   border-radius: 16px;
   gap: 16px;
   box-shadow: 35px 15px 45px 0px rgba(0, 0, 0, 0.09);
@@ -1307,4 +1351,63 @@ padding: 16px;
 
 .h3image {
   justify-content: space-between;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+.navigationIcon {
+  text-shadow: 0 0 5px lightskyblue, 0 0 15px lightskyblue,
+    0 0 20px lightskyblue, 0 0 40px lightskyblue, 0 0 60px blueviolet,
+    0 0 10px blue, 0 0 98px blueviolet;
+  color: blue;
+  font-family: "Sacramento", cursive;
+  text-align: center;
+  animation: blink 8s infinite;
+  -webkit-animation: blink 8s infinite;
+}
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #3c31dd;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px lightskyblue, 0 0 15px lightskyblue,
+      0 0 20px lightskyblue, 0 0 40px lightskyblue, 0 0 60px blueviolet,
+      0 0 10px blue, 0 0 98px blueviolet;
+    color: white;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #3c31dd;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 5px lightskyblue, 0 0 15px lightskyblue,
+      0 0 20px lightskyblue, 0 0 40px lightskyblue, 0 0 60px blueviolet,
+      0 0 10px blue, 0 0 98px blueviolet;
+    color: white;
+  }
 }

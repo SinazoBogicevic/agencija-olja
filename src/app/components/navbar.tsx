@@ -18,7 +18,7 @@ export default function Navbar() {
       <nav className={styles.navigation}>
         <div className={styles.navigationIcon}>
           <Image src={vector} alt={""} />
-          <p>Finanxe</p>
+          <p>Olgica Bogicevic</p>
         </div>
         <div>
           {burgerOpen ? (
@@ -35,19 +35,19 @@ export default function Navbar() {
         </div>
         {!burgerOpen && (
           <ul className={styles.list}>
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Packages">Packages</a></li>
-              <li><a href="#Companies">Companies</a></li>
+              <li><a href="#Home">Pocetna</a></li>
+              <li><a href="#Services">Usluge</a></li>
+              <li><a href="#Packages">Paketi</a></li>
+              <li><a href="#Companies">Kompanije</a></li>
               <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Clients</a></li>
-              <li><a href="#Contact">Contact Us</a></li>
+              <li><a href="#Clients">Klijenti</a></li>
+              <li><a href="#Contact">Kontaktiraj Nas</a></li>
             <li className={styles.dropdown}>
               {/* <p onClick={() => setShowLanguages((curr) => !curr)}>
                 Language <FaChevronDown className={styles.chevronDown} />
               </p> */}
               <p>
-                Language <FaChevronDown className={styles.chevronDown} />
+                Jezik <FaChevronDown className={styles.chevronDown} />
               </p>
               <ul className={styles.languageNav}>
                 <li>
@@ -82,16 +82,16 @@ export default function Navbar() {
         {burgerOpen && (
           <>
             <ul className={styles.navigationUl}>
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Packages">Packages</a></li>
-              <li><a href="#Companies">Companies</a></li>
+              <li><a href="#Home">Pocetna</a></li>
+              <li><a href="#Services">Usluge</a></li>
+              <li><a href="#Packages">Paketi</a></li>
+              <li><a href="#Companies">Kompanije</a></li>
               <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Clients</a></li>
-              <li><a href="#Contact">Contact Us</a></li>
+              <li><a href="#Clients">Klijenti</a></li>
+              <li><a href="#Contact">Kontaktiraj Nas</a></li>
               <li>
                 <p onClick={() => setShowLanguages((curr) => !curr)}>
-                  Language <FaChevronDown className={styles.chevronDown} />
+                  Jezik <FaChevronDown className={styles.chevronDown} />
                 </p>
               </li>
             </ul>
