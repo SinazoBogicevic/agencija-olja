@@ -505,7 +505,7 @@ text-align: left; */
     border-width: 0px 0px 1px 0px;
     border-color: #cacaca;
     margin-bottom: 16px;
-    background-color: white;
+    /* background-color: white; */
   }
 
   .input::placeholder {

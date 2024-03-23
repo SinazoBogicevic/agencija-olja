@@ -3,10 +3,41 @@ import Image from "next/image";
 import { useForm } from "react-hook-form";
 import contactUs from "../contactUs.png";
 import styles from "../page.module.css";
+import { useRef } from "react";
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const { register, handleSubmit } = useForm({
+    defaultValues:{
+      name:"",
+      email:"",
+      message:"",
+      telephone:"",
+      services:"",
+    }
+  });
+
+  const form = useRef<string | HTMLFormElement | any>();
+  const serviceId = "service_da60x1n"
+  const templateId = "template_kkut2iq"
+  const key = "TOkQO9mDhNq-mkBRJ"
+
+  const onSubmit = (formData: Record<string, unknown> | undefined) => {
+
+    if(serviceId && templateId && key){
+      emailjs
+      .send(serviceId, templateId, formData, key)
+      .then(
+        () => {
+          console.log('SUCCESS!');
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+    }
+  };
+
   return (
     <div className={styles.contactWrapper} id="Contact">
       <Image src={contactUs} className={styles.contactImage} alt="" />
@@ -54,7 +85,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder=""
-                {...register("Message", { required: true })}
+                {...register("message", { required: true })}
                 className={styles.input}
               />
             </div>

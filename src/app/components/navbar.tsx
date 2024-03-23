@@ -7,10 +7,19 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import styles from "../page.module.css";
 import vector from "../vector.png";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [showLanguages, setShowLanguages] = useState(false);
   const [burgerOpen, setBurgerOpen] = useState(false);
+
+  const router = useRouter();
+  const pathname = usePathname()
+
+  // const changeLanguage = (e:any) => {
+  //   const locale = e.target.value;
+  //   router.push(pathname, { locale } )
+  // };
 
   // open ?  show x : burrger
   return (
