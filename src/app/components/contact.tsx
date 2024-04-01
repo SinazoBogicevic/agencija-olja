@@ -1,42 +1,47 @@
 "use client";
 import Image from "next/image";
 import { useForm } from "react-hook-form";
-import contactUs from "../contactUs.png";
+import contactUs from "../contactUs.jpg";
 import styles from "../page.module.css";
-import { useRef } from "react";
-import emailjs from '@emailjs/browser';
+import { useEffect, useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
-  const { register, handleSubmit } = useForm({
-    defaultValues:{
-      name:"",
-      email:"",
-      message:"",
-      telephone:"",
-      services:"",
-    }
+  const { register, handleSubmit, reset } = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      message: "",
+      telephone: "",
+      services: "",
+    },
   });
 
   const form = useRef<string | HTMLFormElement | any>();
-  const serviceId = "service_da60x1n"
-  const templateId = "template_kkut2iq"
-  const key = "TOkQO9mDhNq-mkBRJ"
 
   const onSubmit = (formData: Record<string, unknown> | undefined) => {
-
-    if(serviceId && templateId && key){
-      emailjs
-      .send(serviceId, templateId, formData, key)
-      .then(
+    console.log(process.env.NEXT_PUBLIC_YOUR_SERVICE_ID)
+    if (process.env.NEXT_PUBLIC_YOUR_SERVICE_ID && process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID && process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY) {
+      emailjs.send(process.env.NEXT_PUBLIC_YOUR_SERVICE_ID, process.env.NEXT_PUBLIC_YOUR_TEMPLATE_ID, formData, process.env.NEXT_PUBLIC_YOUR_PUBLIC_KEY).then(
         () => {
-          console.log('SUCCESS!');
+          setIsSubmitSuccessful(true);
+          console.log("SUCCESS!");
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
     }
   };
+
+  const [isSubmitSuccessful, setIsSubmitSuccessful] = useState(false);
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({ name: "", email: "", telephone: "", services: "", message: "" });
+      setIsSubmitSuccessful(false);
+    }
+  }, [isSubmitSuccessful]);
 
   return (
     <div className={styles.contactWrapper} id="Contact">
@@ -47,8 +52,9 @@ export default function Contact() {
             <span className={styles.darkBlueTitle}>KONTAKTIRAJTE</span> NAS
           </h1>
           <p>
-          Za sva dodatna pitanja i stručnu podršku, molimo vas da popunite kontakt formu 
-          u nastavku. Naše kolege će vas kontaktirati u najkraćem roku.{" "}
+            Za sva dodatna pitanja i stručnu podršku, molimo vas da popunite
+            kontakt formu u nastavku. Naše kolege će vas kontaktirati u
+            najkraćem roku.{" "}
           </p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
@@ -73,15 +79,22 @@ export default function Contact() {
                 {...register("telephone", { required: true })}
                 className={styles.input}
               />
-              <input
-                type="text"
+              <select
                 placeholder="Services"
                 {...register("services", { required: true })}
                 className={styles.input}
-              />
+              >
+                <option value="" hidden>Odaberite uslugu:</option>
+                <option>Finansije</option>
+                <option>Revizija</option>
+                <option>Osiguranje</option>
+                <option>Planiranje</option>
+                <option>Finansijsko Planiranje</option>
+                <option>Drugo...</option>
+              </select>
             </div>
             <div className={styles.inputMassage}>
-              <p>Messages</p>
+              <p className={styles.message}>Message:</p>
               <input
                 type="text"
                 placeholder=""
@@ -90,7 +103,11 @@ export default function Contact() {
               />
             </div>
           </div>
-          <button type="submit" className={styles.submitButton}>
+          <button
+            type="submit"
+            onClick={() => alert("Poruka poslata")}
+            className={styles.submitButton}
+          >
             Get Started
           </button>
         </form>

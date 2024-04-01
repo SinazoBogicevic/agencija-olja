@@ -44,28 +44,7 @@ export default function Testimonials() {
           </div>
         </div>
         <div className={styles.client2}>
-          <Image
-            src={apollo}
-            width={150}
-            className={styles.clientPicture1}
-            alt={""}
-          />
-          <div className={styles.containerClient1}>
-            <p>
-              “ Njihov profesionalizam i digitalizovana 
-              usluga su nam u mnogome olaksali poslovanje. Za svaku preporuku.""
-            </p>
-            <div className={styles.bodyClient1}>
-              <div>
-                <h2>Blagana Jaglic</h2>
-                <p>Generalni Direktor Turisticke Agencije Apollo Travel</p>
-              </div>
-              <Image src={fiveStars} alt={""} />
-            </div>
-          </div>
-        </div>
-        <div className={styles.client3}>
-          <Image
+        <Image
             src={zdravko}
             className={styles.clientPicture1}
             alt={""}
@@ -81,6 +60,27 @@ export default function Testimonials() {
               <div>
                 <h2>Zdravko Mirovic</h2>
                 <p>Generalni Direktor Turisticke Agencije Apolo Travel</p>
+              </div>
+              <Image src={fiveStars} alt={""} />
+            </div>
+          </div>
+        </div>
+        <div className={styles.client3}>
+        <Image
+            src={apollo}
+            width={150}
+            className={styles.clientPicture1}
+            alt={""}
+          />
+          <div className={styles.containerClient1}>
+            <p>
+              “ Njihov profesionalizam i digitalizovana 
+              usluga su nam u mnogome olaksali poslovanje. Za svaku preporuku.""
+            </p>
+            <div className={styles.bodyClient1}>
+              <div>
+                <h2>Blagana Jaglic</h2>
+                <p>Generalni Direktor Turisticke Agencije Apollo Travel</p>
               </div>
               <Image src={fiveStars} alt={""} />
             </div>

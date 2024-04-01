@@ -8,6 +8,7 @@ import Navbar from "./components/navbar";
 import Packages from "./components/packages";
 import Section from "./components/section";
 import Testimonials from "./components/testimonials";
+import Map from "./components/map";
 import styles from "./page.module.css";
 import { services } from "./statics";
 
@@ -36,6 +37,7 @@ export default function Home() {
       <Faqs />
       <Testimonials />
       <Contact />
+      <Map />
       <Footer />
     </main>
   );

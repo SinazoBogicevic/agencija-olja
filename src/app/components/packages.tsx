@@ -11,12 +11,12 @@ export default function Packages() {
                 <div className={styles.package1}>
                     <h3>Plan1</h3>
                     <div className={styles.mouthlyPayment}><h2>9,999.00din</h2><p>/mesecno</p></div>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> 14 contents in total</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Including 12 Feed Designs</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Including 2 story designs</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Post Carousel included</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> FREE 12 Caption Copywriting</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> FREE Viral Hastag Optimization</p>
+                    <p><FaCheckCircle color="#cacaca"/> 14 contents in total</p>
+                    <p><FaCheckCircle color="#cacaca"/> Including 12 Feed Designs</p>
+                    <p><FaCheckCircle color="#cacaca"/> Including 2 story designs</p>
+                    <p><FaCheckCircle color="#cacaca"/> Post Carousel included</p>
+                    <p><FaCheckCircle color="#cacaca"/> FREE 12 Caption Copywriting</p>
+                    <p><FaCheckCircle color="#cacaca"/> FREE Viral Hastag Optimization</p>
                     <button className={styles.packagesButtons}>Purchase</button>
                 </div>
                 <div className={styles.package2}>
@@ -34,14 +34,14 @@ export default function Packages() {
                 <div className={styles.package3}>
                     <h3>Plan3</h3>
                     <div className={styles.mouthlyPayment}><h2>39,999.00din</h2><p>/mesecno</p></div>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Get 66 contents in total</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Includes 4 Video Reels (NEW)</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Includes 48 Feed designs</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Includes 14 Story Designs</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> Include Post Carousel</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> FREE 52 Caption Copywriting</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> FREE Viral Hastag Optimization</p>
-                    <p><FaCheckCircle color="rgba(0, 182, 255, 1)"/> FREE Admin Posting</p>
+                    <p><FaCheckCircle color="#cacaca"/> Get 66 contents in total</p>
+                    <p><FaCheckCircle color="#cacaca"/> Includes 4 Video Reels (NEW)</p>
+                    <p><FaCheckCircle color="#cacaca"/> Includes 48 Feed designs</p>
+                    <p><FaCheckCircle color="#cacaca"/> Includes 14 Story Designs</p>
+                    <p><FaCheckCircle color="#cacaca"/> Include Post Carousel</p>
+                    <p><FaCheckCircle color="#cacaca"/> FREE 52 Caption Copywriting</p>
+                    <p><FaCheckCircle color="#cacaca"/> FREE Viral Hastag Optimization</p>
+                    <p><FaCheckCircle color="#cacaca"/> FREE Admin Posting</p>
                     <button className={styles.packagesButtons}>Purchase</button>
                 </div>
             </div>
