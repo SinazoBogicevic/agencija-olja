@@ -6,32 +6,32 @@ import accounting from './accounting.png'
 
 export const services =  [
     {
-      title: 'Finansije',
-      body: 'Finansija predstavljaju svojevrsnu umetnost i nauku upravljanja novcem.',
+      title: 'Финансије',
+      body: 'Финансије представљају врсту уметности и науке управљања новцем.',
       icon: budget,
   
   },
   {
-    title: 'Revizija',
-    body: 'Finansijaska revizija se sprovodi da bi obezbedila mišljenje da li je "finansijski izveštaj" (informacija koja se proverava) u skladu sa određenim kriterijumima. ',
+    title: 'Ревизија',
+    body: 'Финансијска ревизија се спроводи да би се дало мишљење о томе да ли је „финансијски извештај“ (информација која се ревидира) у складу са одређеним критеријумима.',
     icon: schedule,
 
 },
 {
-  title: 'Osiguranje',
-  body: 'Osiguranje je jedan oblik upravljanja rizikom, prvenstveno usmeren na smanjenje finansijskih gubitaka. Osiguranje je prenos rizika sa osiguranika na osiguravajuće društvo, uz plaćanje premije osiguranja.',
+  title: 'Осигурање',
+  body: 'Осигурање је облик управљања ризицима, првенствено усмерен на смањење финансијских губитака. Осигурање је пренос ризика са осигураника на друштво за осигурање, уз плаћање премије осигурања.',
   icon: teamwork,
 
 },
 {
-  title: 'Planiranje',
-  body: 'Planiranje predstavlja, kao proces, menadžersku funkciju kojom se određuju ciljevi tekućeg poslovanja i razvoja organizacije, zatim predviđanje i definisanje budućih zadataka, kao i uslova u kojima ti zadaci treba da se izvršavaju a ciljevi ostvaruju.',
+  title: 'Планирање',
+  body: 'Планирање представља, као процес, управљачку функцију којом се утврђују циљеви текућег пословања и развоја организације, затим предвиђају и дефинишу будући задаци, као и услови у којима ови задаци треба да се извршавају и циљеви остварују.',
   icon: audit,
 
 },
 {
-  title: 'Finansijsko Planiranje',
-  body: 'Finansijsko planiranje je konkretizacija finansijske politike uz finansijske planove kojima se cilj finansijske politike stavlja u vrednosni izraz u vremenu i prostoru.',
+  title: 'Финансијско планирање',
+  body: 'Финансијско планирање је конкретизација финансијске политике финансијским плановима који циљ финансијске политике стављају у вредносни израз у времену и простору.',
   icon: accounting,
 
 },
@@ -46,27 +46,27 @@ export const services =  [
 
 export const questions =  [
   {   id: 1,
-      title: 'Koja je cena vaših usluga?',
-      body: 'Da bi mogli da formiramo cenu za naše usluge neophodno je da nam dostavite detaljne podatke o vašoj firmi, kao što su prosečan broj ulaznih i izlaznih računa, broj zaposlenih, ukupan prihod i slično.',
+      title: 'Колика је цена ваших услуга?',
+      body: 'Да бисмо могли да формирамо цену за наше услуге неопходно је да нам доставите детаљне податке о вашој фирми, као што су просечан број улазних и излазних рачуна, број запослених, укупан приход и слично.',
   },
   {   id: 2,
-      title: 'Da li vaši zaposleni govore engleski?',
-      body: 'Većina naših zaposlenih tečno govori i piše engleski jezik.',
+      title: 'Да ли ваши запослени говоре енглески?',
+      body: 'Већина наших запослених техничко говори и пише енглески језик.',
   },
   {   id: 3,
-      title: 'Da li moramo dostavljati dokumentaciju lično ili elektronskim putem?',
-      body: 'Dokumentaciju možete dostavljati elektronskim putem, a orginale arhivirati kod sebe, a nakon toga (naknadno), u dogovorenom roku, dostavljate i orginalnu dokuemntaciju.',
+      title: 'Да ли документацију морамо предати лично или електронски?',
+      body: 'Документацију можете доставити електронским путем, а оригиналe архивирати код себе, а након тога (накнадно), у договореном року, достављате и оргиналну документацију.',
   },
   {   id: 4,
-      title: 'Da li vršite administrativne usluge za klijente?',
-      body: 'Vršimo i ovaj vid usluga za klijente, ali je neophodno da se usaglasi obim i sadržaj istih prilikom uspostavljanja saradnje.',
+      title: 'Да ли обављате административне услуге за клијенте?',
+      body: 'Вршимо и овај вид услуга за клијенте, али је неопходно да се усагласи обим и садржај истих приликом успостављања сарадње.',
   },
   {   id: 5,
-      title: 'Da li je pečat neophodan?',
-       body: 'Pečat više nije neophodan. Prestao je da bude obavezna stavka u poslovanju.',
+      title: 'Да ли је печат неопходан?',
+       body: 'Печат више није неопходан. Престао је да буде обавезна ставка у пословању.',
   },
   {   id: 6,
-      title: 'Kako otvoriti radnju elektronski',
-       body: '1.otvaranje korisničkog naloga na sajtu APR,2.budući vlasnik mora posedovati ličnu kartu sa elektronskim sertifikatom,3.uplaćena taksa APR-u za registraciju u iznosu od 1000rsd,4.za neke delatnosti su potrebne saglasnosti,5.ovlašćenje za prokuru,APR u roku od 5 radnih dana šalje rešenje o registraciji, PIB i prijavu preduzetnika na socijalno osiguranje.',
+      title: 'Како отворити радњу електронским путем?',
+       body: '1.отварање корисничког налога на сајту АПР,2.будући власник мора поседовати личну карту са електронским сертификатом,3.уплаћена такса АПР-у за регистрацију у износу од 1000рсд,4.за неке делатности су потребне сагласности,5.овлашћење за прокуру, АПР у року од 5 радних дана шаље решење о регистрацији, ПИБ и пријаву предузетника на социјално осигурање.',
   },
     ]

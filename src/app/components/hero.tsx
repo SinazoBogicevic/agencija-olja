@@ -15,9 +15,9 @@ export function Hero() {
         <div className={styles.heroText}>
           <h1>{sr.heroTitle}</h1>
           <p>
-            Briga o novcu je univerzalna. Mnogi od nas, iz celog sveta i iz svih sfera života, skoro konstantno se suočavamo sa finansijskim stresom i neizvesnošću koje nam nosi budućnost. Šta ljude najviše brine kada je riječ o finansijama i koji su korisni saveti za finansijsku sigurnost saznajte u nastavku.
+          Брига о новцу је универзална. Многи од нас, из целог света и из свих сфера живота, готово су стално суочени са финансијским стресом и неизвесношћу у погледу будућности. Шта највише брине људе када су финансије у питању и који су корисни савети за финансијску сигурност, сазнајте у наставку.
           </p>
-          <button type="submit">Get Started</button>
+          <a href="#Services"><button type="submit">Почети</button></a>
         </div>
         <div>
         <Image

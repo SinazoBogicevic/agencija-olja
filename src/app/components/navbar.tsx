@@ -27,7 +27,7 @@ export default function Navbar() {
       <nav className={styles.navigation}>
         <div className={styles.navigationIcon}>
           <Image src={vector} className={styles.navigationLogo} alt={""} />
-          <p>Olgica Bogicevic</p>
+          <p>Олгица Богићевић</p>
         </div>
         <div>
           {burgerOpen ? (
@@ -45,25 +45,25 @@ export default function Navbar() {
         {!burgerOpen && (
           <ul className={styles.list}>
             <li>
-              <a href="#Home">Pocetna</a>
+              <a href="#Home">Почетна</a>
             </li>
             <li>
-              <a href="#Services">Usluge</a>
+              <a href="#Services">Услуге</a>
             </li>
             <li>
-              <a href="#Packages">Paketi</a>
+              <a href="#Packages">Пакети</a>
             </li>
             <li>
-              <a href="#Companies">Kompanije</a>
+              <a href="#Companies">Компаније</a>
             </li>
             <li>
               <a href="#FAQs">FAQs</a>
             </li>
             <li>
-              <a href="#Clients">Klijenti</a>
+              <a href="#Clients">Клијенти</a>
             </li>
             <li>
-              <a href="#Contact">Kontaktiraj Nas</a>
+              <a href="#Contact">Контактирај Нас</a>
             </li>
             {/* <li className={styles.dropdown}>
               <p onClick={() => setShowLanguages((curr) => !curr)}>
@@ -106,25 +106,25 @@ export default function Navbar() {
           <>
             <ul className={styles.navigationUl}>
               <li>
-                <a href="#Home">Pocetna</a>
+                <a href="#Home">Почетна</a>
               </li>
               <li>
-                <a href="#Services">Usluge</a>
+                <a href="#Services">Услуге</a>
               </li>
               <li>
-                <a href="#Packages">Paketi</a>
+                <a href="#Packages">Пакети</a>
               </li>
               <li>
-                <a href="#Companies">Kompanije</a>
+                <a href="#Companies">Компаније</a>
               </li>
               <li>
                 <a href="#FAQs">FAQs</a>
               </li>
               <li>
-                <a href="#Clients">Klijenti</a>
+                <a href="#Clients">Клијенти</a>
               </li>
               <li>
-                <a href="#Contact">Kontaktiraj Nas</a>
+                <a href="#Contact">Контактирај Нас</a>
               </li>
               {/* <li>
                 <p onClick={() => setShowLanguages((curr) => !curr)}>

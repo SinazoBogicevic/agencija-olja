@@ -49,19 +49,19 @@ export default function Contact() {
       <div className={styles.contactContent}>
         <div className={styles.contectTitle}>
           <h1>
-            <span className={styles.darkBlueTitle}>KONTAKTIRAJTE</span> NAS
+            <span className={styles.darkBlueTitle}>КОНТАКТИРАЈТЕ</span> НАС
           </h1>
           <p>
-            Za sva dodatna pitanja i stručnu podršku, molimo vas da popunite
-            kontakt formu u nastavku. Naše kolege će vas kontaktirati u
-            najkraćem roku.{" "}
+          За сва додатна питања и стручну подршку, молимо вас да попуните
+контакт форму у наставку. Наше колеге ће Вас контактирати у
+најкраћем року.{" "}
           </p>
         </div>
         <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
           <div className={styles.inputsWrapper}>
             <div className={styles.inputs}>
               <input
-                placeholder="Full Name"
+                placeholder="Пуно име"
                 {...register("name", { required: true, maxLength: 20 })}
                 className={styles.input}
               />
@@ -75,7 +75,7 @@ export default function Contact() {
             <div className={styles.inputs}>
               <input
                 type="tel"
-                placeholder="Telephone"
+                placeholder="Телефон"
                 {...register("telephone", { required: true })}
                 className={styles.input}
               />
@@ -84,17 +84,17 @@ export default function Contact() {
                 {...register("services", { required: true })}
                 className={styles.input}
               >
-                <option value="" hidden>Odaberite uslugu:</option>
-                <option>Finansije</option>
-                <option>Revizija</option>
-                <option>Osiguranje</option>
-                <option>Planiranje</option>
-                <option>Finansijsko Planiranje</option>
-                <option>Drugo...</option>
+                <option value="" hidden>Изаберите услугу:</option>
+                <option>Финансије</option>
+                <option>Ревизија</option>
+                <option>Осигурање</option>
+                <option>Планирање</option>
+                <option>Финансијско Планирање</option>
+                <option>Друго...</option>
               </select>
             </div>
             <div className={styles.inputMassage}>
-              <p className={styles.message}>Message:</p>
+              <p className={styles.message}>Порука:</p>
               <input
                 type="text"
                 placeholder=""
@@ -108,7 +108,7 @@ export default function Contact() {
             onClick={() => alert("Poruka poslata")}
             className={styles.submitButton}
           >
-            Get Started
+            Послати
           </button>
         </form>
       </div>

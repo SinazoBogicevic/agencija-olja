@@ -20,12 +20,12 @@ export default function Home() {
       <Section
         title={
           <span>
-            Naši radovi i {" "}
-            <span className={styles.darkBlueTitle}>usluge uređenja</span>
+            Наши радови и{" "}
+            <span className={styles.darkBlueTitle}>услуге уређења</span>
           </span>
         }
         subtitle={
-          "Preko 20 godina iskustva u oblasti računovodstva i poreskog savetovanja. Nudimo Vam kompletnu knjigovodstvenu uslugu i savetovanje iz oblasti finansija. Spremni smo da Vam pomognemo u svim oblastima finansija, računovodstva i poreskog savetovanja. Sa svojim klijentima ostvarujemo profesionalan i poverljiv odnos, te postajemo nezamenljiv poslovni partner kome možete verovati i koji je uvek na raspolaganju."}
+          "Преко 20 година искуства у области рачуноводства и пореског консалтинга. Нудимо Вам комплетну књиговодствену услугу и консалтинг из области финансија. Спремни смо да Вам помогнемо у свим областима финансија, рачуноводства и пореског консалтинга. Са нашим клијентима успостављамо професионалан и поверљив однос и постајемо незаменљив пословни партнер коме можете веровати и који вам је увек на располагању."}
         style={styles.cards}
       >
         {services.map(({ title, body, icon }) => (

@@ -16,7 +16,7 @@ export default function Footer() {
       <div className={styles.smart}>
         <Image src={smArt} alt="" />
         <p>
-        Takodje nas mozete pronaci i na drustvenim mrezama.{" "}
+        Можете нас пронаћи и на друштвеним мрежама.{" "}
         </p>
         <div className={styles.socialMedia}>
           <a href="https://www.linkedin.com/">
@@ -54,25 +54,39 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.quickLinks}>
-        <h6>Brze Veze</h6>
+        <h6>Брзе везе</h6>
         <ul className={styles.footerBar}>
-        <li><a href="#Home">Pocetna</a></li>
-              <li><a href="#Services">Usluge</a></li>
-              <li><a href="#Packages">Paketi</a></li>
-              <li><a href="#Companies">Kompanije</a></li>
-              <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Klijenti</a></li>
-              <li><a href="#Contact">Kontaktiraj Nas</a></li>
+              <li>
+                <a href="#Home">Почетна</a>
+              </li>
+              <li>
+                <a href="#Services">Услуге</a>
+              </li>
+              <li>
+                <a href="#Packages">Пакети</a>
+              </li>
+              <li>
+                <a href="#Companies">Компаније</a>
+              </li>
+              <li>
+                <a href="#FAQs">FAQs</a>
+              </li>
+              <li>
+                <a href="#Clients">Клијенти</a>
+              </li>
+              <li>
+                <a href="#Contact">Контактирај Нас</a>
+              </li>
         </ul>
       </div>
       <div className={styles.contact}>
-        <h6>Kontaktiraj Nas</h6>
+        <h6>Контактирајте Нас</h6>
         <div className={styles.contactNo}>
         <TfiEmail color="lightskyblue"/> 
           <p>olja.bogicevic65@gmail.com</p>
           <p>agencijaolja@mts.rs</p>
         <IoLocationSharp color="green"/>
-          <p>Zore Radulovic 14a, 34000 Kragujevac, Srbija</p>
+          <p>Зоре Радуловић 14а, 34000 Крагујевац, Србија</p>
         <PiPhoneDisconnectDuotone color="orange"/>
           <p>+381 66 331 573</p>
           <p>+381 34 331 573</p>

@@ -1,3 +1,3 @@
 export default {
-    heroTitle:"Sačuvajte svoje finansije za bolju budućnost"
+    heroTitle:"Сачувајте своје финансије за бољу будућност"
 }
