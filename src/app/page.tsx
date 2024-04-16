@@ -8,6 +8,7 @@ import Navbar from "./components/navbar";
 import Packages from "./components/packages";
 import Section from "./components/section";
 import Testimonials from "./components/testimonials";
+import Map from "./components/map";
 import styles from "./page.module.css";
 import { services } from "./statics";
 
@@ -19,13 +20,12 @@ export default function Home() {
       <Section
         title={
           <span>
-            Our landscaping work and{" "}
-            <span className={styles.darkBlueTitle}>services</span>
+            Наши радови и{" "}
+            <span className={styles.darkBlueTitle}>услуге уређења</span>
           </span>
         }
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis."
-        }
+          "Преко 20 година искуства у области рачуноводства и пореског консалтинга. Нудимо Вам комплетну књиговодствену услугу и консалтинг из области финансија. Спремни смо да Вам помогнемо у свим областима финансија, рачуноводства и пореског консалтинга. Са нашим клијентима успостављамо професионалан и поверљив однос и постајемо незаменљив пословни партнер коме можете веровати и који вам је увек на располагању."}
         style={styles.cards}
       >
         {services.map(({ title, body, icon }) => (
@@ -37,6 +37,7 @@ export default function Home() {
       <Faqs />
       <Testimonials />
       <Contact />
+      <Map />
       <Footer />
     </main>
   );

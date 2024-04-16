@@ -14,12 +14,11 @@ export function Faqs() {
     <Section
         title={
           <span>
-            Frequently Asked {" "}
-            <span className={styles.darkBlueTitle}>Questions</span>
+            Често постављана {" "}<span className={styles.darkBlueTitle}>питања</span>
           </span>
         }
         subtitle={
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus hendrerit suscipit egestas. Nunc eget congue ante. Vivamus ut sapien et ex volutpat tincidunt eget at felis."
+          "Рачуноводствене агенције играју кључну улогу у финансијском управљању пословања својих клијената. Поред пружања рачуноводствених и књиговодствених услуга, данас се агенције све више ослањају на онлајн платформе како би унапредиле своје пословање и обезбедиле успех на конкурентном тржишту. За сва додатна питања и консултације контактирајте нас."
         }
         style={styles.cards}
       >

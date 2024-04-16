@@ -6,19 +6,28 @@ import { FaChevronDown } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import styles from "../page.module.css";
-import vector from "../vector.png";
+import vector from "../vector.jpeg";
+import { usePathname, useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [showLanguages, setShowLanguages] = useState(false);
   const [burgerOpen, setBurgerOpen] = useState(false);
+
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // const changeLanguage = (e:any) => {
+  //   const locale = e.target.value;
+  //   router.push(pathname, { locale } )
+  // };
 
   // open ?  show x : burrger
   return (
     <div className={styles.navigationAll}>
       <nav className={styles.navigation}>
         <div className={styles.navigationIcon}>
-          <Image src={vector} alt={""} />
-          <p>Finanxe</p>
+          <Image src={vector} className={styles.navigationLogo} alt={""} />
+          <p>Олгица Богићевић</p>
         </div>
         <div>
           {burgerOpen ? (
@@ -35,19 +44,33 @@ export default function Navbar() {
         </div>
         {!burgerOpen && (
           <ul className={styles.list}>
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Packages">Packages</a></li>
-              <li><a href="#Companies">Companies</a></li>
-              <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Clients</a></li>
-              <li><a href="#Contact">Contact Us</a></li>
-            <li className={styles.dropdown}>
-              {/* <p onClick={() => setShowLanguages((curr) => !curr)}>
+            <li>
+              <a href="#Home">Почетна</a>
+            </li>
+            <li>
+              <a href="#Services">Услуге</a>
+            </li>
+            <li>
+              <a href="#Packages">Пакети</a>
+            </li>
+            <li>
+              <a href="#Companies">Компаније</a>
+            </li>
+            <li>
+              <a href="#FAQs">FAQs</a>
+            </li>
+            <li>
+              <a href="#Clients">Клијенти</a>
+            </li>
+            <li>
+              <a href="#Contact">Контактирај Нас</a>
+            </li>
+            {/* <li className={styles.dropdown}>
+              <p onClick={() => setShowLanguages((curr) => !curr)}>
                 Language <FaChevronDown className={styles.chevronDown} />
-              </p> */}
+              </p>
               <p>
-                Language <FaChevronDown className={styles.chevronDown} />
+                Jezik <FaChevronDown className={styles.chevronDown} />
               </p>
               <ul className={styles.languageNav}>
                 <li>
@@ -57,7 +80,7 @@ export default function Navbar() {
                   <a href="">Serbian 🇷🇸</a>
                 </li>
               </ul>
-            </li>
+            </li> */}
           </ul>
         )}
         {
@@ -82,20 +105,34 @@ export default function Navbar() {
         {burgerOpen && (
           <>
             <ul className={styles.navigationUl}>
-              <li><a href="#Home">Home</a></li>
-              <li><a href="#Services">Services</a></li>
-              <li><a href="#Packages">Packages</a></li>
-              <li><a href="#Companies">Companies</a></li>
-              <li><a href="#FAQs">FAQs</a></li>
-              <li><a href="#Clients">Clients</a></li>
-              <li><a href="#Contact">Contact Us</a></li>
               <li>
-                <p onClick={() => setShowLanguages((curr) => !curr)}>
-                  Language <FaChevronDown className={styles.chevronDown} />
-                </p>
+                <a href="#Home">Почетна</a>
               </li>
+              <li>
+                <a href="#Services">Услуге</a>
+              </li>
+              <li>
+                <a href="#Packages">Пакети</a>
+              </li>
+              <li>
+                <a href="#Companies">Компаније</a>
+              </li>
+              <li>
+                <a href="#FAQs">FAQs</a>
+              </li>
+              <li>
+                <a href="#Clients">Клијенти</a>
+              </li>
+              <li>
+                <a href="#Contact">Контактирај Нас</a>
+              </li>
+              {/* <li>
+                <p onClick={() => setShowLanguages((curr) => !curr)}>
+                  Jezik <FaChevronDown className={styles.chevronDown} />
+                </p>
+              </li> */}
             </ul>
-            <ul
+            {/* <ul
               className={clsx(styles.language, {
                 [styles.hasMaxHeight]: showLanguages,
                 [styles.noMaxHeight]: !showLanguages,
@@ -107,7 +144,7 @@ export default function Navbar() {
               <li>
                 <a href="">Serbian 🇷🇸</a>
               </li>
-            </ul>
+            </ul> */}
           </>
         )}
       </div>
